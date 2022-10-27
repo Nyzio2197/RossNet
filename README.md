@@ -15,8 +15,3 @@ When downloaded, the application requires the input of `npm install` into the co
 ## Usage
 
 The application can be initiated by inputting `npm run dev` into the command line interface and running the application on `localhost: 3000`.
-
-## Connect to production server
-`ssh -i "entr490.key" ubuntu@152.67.229.173`
-
-**!!! If you do not understand the ubuntu command line, do not run any commands. You may brick the server.**
