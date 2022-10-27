@@ -15,3 +15,12 @@ When downloaded, the application requires the input of `npm install` into the co
 ## Usage
 
 The application can be initiated by inputting `npm run dev` into the command line interface and running the application on `localhost: 3000`.
+
+## To Do
+
+- Migrate to production database
+- Add email validation*
+- Add password reset*
+- Add google analytics
+- Add google ads
+- Add payment*
