@@ -1,3 +1,4 @@
+#!/bin/bash/env node
 // Bring in modules.
 const express = require("express");
 const connectDB = require("./config/db");
