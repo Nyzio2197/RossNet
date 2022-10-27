@@ -1,9 +1,10 @@
+.idea
 node_modules
 
 package-lock.json
 .env
 
-/client/build
+/client/node_modules
 config/default.json
 config/production.json
 
