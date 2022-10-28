@@ -20,8 +20,7 @@ const ContactItem = ({ contact }) => {
         <span
           style={{ float: "right" }}
           className={
-            "badge " +
-            (type === "professional" ? "badge-success" : "badge-primary")
+            "badge badge-" + String(type).toLowerCase()
           }
         >
           {/* The charAt/slice javascript capitalizes the first letter and then adds on the remaining letters to reconstruct the word "professional" or "personal".*/}
@@ -49,9 +48,9 @@ const ContactItem = ({ contact }) => {
         <button
           className="btn btn-dark btn-sm"
           onClick={() => setCurrent(contact)}
-        >
-          Edit
+        >&emsp;Edit&emsp;
         </button>
+          &emsp;
         <button className="btn btn-danger btn-sm" onClick={onDelete}>
           Delete
         </button>

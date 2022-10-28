@@ -4,7 +4,7 @@ import ContactContext from "../../context/contact/contactContext";
 const ContactForm = () => {
   const contactContext = useContext(ContactContext);
 
-  const { addContact, current, clearCurrent, updateContact } = contactContext;
+  const { addContact, current, clearCurrent, updateContact} = contactContext;
 
   // Note: useEffect mimics the life cycle method of componentDidMount.
   useEffect(() => {
@@ -80,7 +80,7 @@ const ContactForm = () => {
             value={phone}
             onChange={onChange}
         />
-        <input
+        <textarea
             type="text"
             placeholder="Description"
             name="description"

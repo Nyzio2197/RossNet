@@ -2,10 +2,10 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #c46500;
+  --primary-color: #00274c;
   --dark-color: #333333;
   --light-color: #f4f4f4;
-  --danger-color: #ed960b;
+  --danger-color: #ff0000;
   --success-color: #568203;
 }
 
@@ -219,9 +219,29 @@ img {
   text-align: center;
   margin: 0.3rem;
   background: var(--light-color);
-  color: #333;
   border-radius: 5px;
 }
+
+.badge-recruiter {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.badge-instructor {
+  background: #c46500;
+  color: #fff;
+}
+
+.badge-peer {
+  background: #568203;
+  color: #fff;
+}
+
+.badge-other {
+  background: #333333;
+  color: #fff;
+}
+
 
 .alert {
   padding: 0.7rem;
@@ -265,7 +285,6 @@ img {
 
 .btn-success,
 .bg-success,
-.badge-success,
 .alert-success {
   background: var(--success-color);
   color: #fff;
@@ -364,6 +383,10 @@ table th {
   border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
   margin-bottom: 1rem;
+}
+
+.navbar-header {
+  color: #FFCB05;
 }
 
 .navbar ul {
