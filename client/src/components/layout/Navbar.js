@@ -1,6 +1,6 @@
 import React, { Fragment, useContext, useEffect } from "react";
 import PropTypes from "prop-types";
-import { GiFoxHead } from "react-icons/gi";
+import { FaAddressBook } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AuthContext from "../../context/auth/authContext";
 import ContactContext from "../../context/contact/contactContext";
@@ -47,8 +47,8 @@ const Navbar = ({ title }) => {
 
   return (
     <div className="navbar bg-primary">
-      <h1>
-        <GiFoxHead />
+      <h1 className="navbar-header">
+        <FaAddressBook />
         &nbsp;
         {title}
       </h1>
