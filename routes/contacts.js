@@ -30,7 +30,7 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-    const { name, email, phone, type, description } = req.body;
+    const { name, email, phone, type, details } = req.body;
 
     try {
       const newContact = new Contact({
@@ -38,7 +38,7 @@ router.post(
         email,
         phone,
         type,
-        description,
+        details,
         user: req.user.id,
       });
 
@@ -54,7 +54,7 @@ router.post(
 
 // PUT route with "api/contacts/:id" endpoint to update contact. Private access.
 router.put("/:id", auth, async (req, res) => {
-  const { name, email, phone, type, description } = req.body;
+  const { name, email, phone, type, details } = req.body;
 
   // Checks to see if the fields are submitted by initializing an object and then adds to the contact fields.
   const contactFields = {};
@@ -62,7 +62,7 @@ router.put("/:id", auth, async (req, res) => {
   if (email) contactFields.email = email;
   if (phone) contactFields.phone = phone;
   if (type) contactFields.type = type;
-  if (description) contactFields.description = description;
+  if (details) contactFields.details = details;
 
   try {
     let contact = await Contact.findById(req.params.id);

@@ -6,7 +6,7 @@ const ContactItem = ({ contact }) => {
   const contactContext = useContext(ContactContext);
   const { deleteContact, setCurrent, clearCurrent } = contactContext;
 
-  const { _id, name, email, phone, type, description } = contact;
+  const { _id, name, email, phone, type, details } = contact;
 
   const onDelete = () => {
     deleteContact(_id);
@@ -38,9 +38,9 @@ const ContactItem = ({ contact }) => {
               <i className="fas fa-phone-alt"></i> {phone}
           </li>
       )}
-      {description && (
+      {details && (
           <li>
-              <i className="fas fa-file-lines"></i> {description}
+              <i className="fas fa-file-lines"></i> {details}
           </li>
       )}
       </ul>

@@ -1,7 +1,7 @@
 {
   "name": "ContactFox",
   "version": "1.0.0",
-  "description": "A MERN-stack application to manage contacts.",
+  "details": "A MERN-stack application to manage contacts.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

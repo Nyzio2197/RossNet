@@ -68,7 +68,7 @@ export default (state, action) => {
             re += "(?=.*" + key + ")";
           }
           const regex = new RegExp(re, "gi");
-          return (contact.name + " " + contact.email + " " + contact.description + " " + contact.type).match(regex);
+          return (contact.name + " " + contact.email + " " + contact.details + " " + contact.type).match(regex);
         }),
       };
     case CLEAR_FILTER:

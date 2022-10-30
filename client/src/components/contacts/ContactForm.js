@@ -16,7 +16,7 @@ const ContactForm = () => {
         email: "",
         phone: "",
         type: "recruiter",
-        description: "",
+        details: "",
       });
     }
   }, [contactContext, current]);
@@ -30,10 +30,10 @@ const ContactForm = () => {
     email: "",
     phone: "",
     type: "recruiter",
-      description: "",
+      details: "",
   });
 
-  const { name, email, phone, type, description } = contact;
+  const { name, email, phone, type, details } = contact;
 
   const onChange = (event) =>
     setContact({ ...contact, [event.target.name]: event.target.value });
@@ -50,7 +50,7 @@ const ContactForm = () => {
       email: "",
       phone: "",
       type: "recruiter",
-      description: "",
+      details: "",
     });
   };
 
@@ -82,9 +82,9 @@ const ContactForm = () => {
         />
         <textarea
             type="text"
-            placeholder="Description"
-            name="description"
-            value={description}
+            placeholder="Details"
+            name="details"
+            value={details}
             onChange={onChange}
         />
       <h5>Contact Type</h5>

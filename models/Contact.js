@@ -22,7 +22,7 @@ const ContactSchema = mongoose.Schema({
     type: String,
     default: "recruiter",
   },
-  description: {
+  details: {
     type: String,
   },
   date: {
