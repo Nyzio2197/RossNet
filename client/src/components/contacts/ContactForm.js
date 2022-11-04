@@ -86,6 +86,7 @@ const ContactForm = () => {
             name="details"
             value={details}
             onChange={onChange}
+            style={{ height: "100px" }}
         />
       <h5>Contact Type</h5>
       <input

@@ -23,7 +23,7 @@ const ContactFilter = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={(event) => event.preventDefault()}>
         <input
           ref={text}
           type="text"
@@ -31,6 +31,7 @@ const ContactFilter = () => {
           onChange={onChange}
         />
       </form>
+      <p>Filter by anything including details and contact type, just keep typing!</p>
     </div>
   );
 };

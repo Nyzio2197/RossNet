@@ -65,10 +65,10 @@ export default (state, action) => {
         filtered: state.contacts.filter((contact) => {
           let re = "";
           for (const key of `${action.payload}`.split(' ')) {
-            re += "(?=.*" + key + ")";
+            re += "(?=.*" + key.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&') + ")";
           }
           const regex = new RegExp(re, "gi");
-          return (contact.name + " " + contact.email + " " + contact.details + " " + contact.type).match(regex);
+          return (contact.name + " " + contact.email + " " + contact.phone + " " + contact.details + " " + contact.type).match(regex);
         }),
       };
     case CLEAR_FILTER:
